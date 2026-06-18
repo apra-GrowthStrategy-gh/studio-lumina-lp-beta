@@ -29,7 +29,7 @@
     display:flex;justify-content:center;
     -webkit-font-smoothing:antialiased;
   }
-  .sheet{width:600px;max-width:100%;background:var(--paper);position:relative;overflow:hidden;}
+  .sheet{width:600px;max-width:100%;background:var(--paper);position:relative;overflow:hidden;padding-bottom:78px}
 
   /* ===== 1) 上部キャンペーン帯 ===== */
   .top-band{
@@ -193,7 +193,7 @@
   .legal a{color:#8a847d}
 
   /* 固定CTA */
-  .fixed-cta{position:sticky;bottom:0;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);border-top:1px solid var(--line);padding:10px 16px;z-index:50}
+  .fixed-cta{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:600px;max-width:100%;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.06);padding:10px 16px;z-index:50}
   .fixed-cta a{display:block;text-align:center;text-decoration:none;background:linear-gradient(180deg,#37C24A,#2A9C3A);color:#fff;border-radius:12px;padding:13px;font-size:16px;font-weight:900;box-shadow:0 4px 12px rgba(42,156,58,.3)}
   .fixed-cta a .ic{margin-right:6px}
 
@@ -402,11 +402,11 @@
     記載の料金・特典は2026年6月時点のものです。本サービスは特定商取引法上の通信販売に該当し、法定返品権（クーリングオフ）の適用はありません。詳細は<a href="tokushoho.html" target="_blank" rel="noopener">重要事項に関する表示</a>をご確認ください。
   </div>
 
-  <!-- 固定CTA -->
-  <div class="fixed-cta">
-    <a href="https://lin.ee/9Y4THee" target="_blank" rel="noopener"><svg style="width:18px;height:18px;vertical-align:-3px;margin-right:6px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg>無料体験レッスンを予約する</a>
-  </div>
+</div>
 
+<!-- 固定CTA（ビューポート基準で常時固定） -->
+<div class="fixed-cta">
+  <a href="https://lin.ee/9Y4THee" target="_blank" rel="noopener"><svg style="width:18px;height:18px;vertical-align:-3px;margin-right:6px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4"/></svg>無料体験レッスンを予約する</a>
 </div>
 </body>
 </html>
